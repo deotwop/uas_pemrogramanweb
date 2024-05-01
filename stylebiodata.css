@@ -1,0 +1,214 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-image: url('flower for caroline/img/bg\ batik\ 2.jpg');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.profile-container {
+  perspective: 1500px;
+}
+
+.profile-card {
+  width: 450px;
+  height: 600px;
+  position: relative;
+  border-radius: 10px;
+  transform-style: preserve-3d;
+  transition: transform 0.8s;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card-front {
+  background: #007bff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-back {
+  background: #d38c8c;
+  transform: rotateY(180deg);
+  padding: 20px;
+  text-align: center;
+}
+
+.profile-image {
+  width: 220px;
+  height: 220px;
+  border-radius: 70%;
+  border: 5px solid white;
+  margin-bottom: 25px;
+}
+
+.btn-front, .btn-back {
+  background-color: #2790ff;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-front:hover, .btn-back:hover {
+  background-color: #0056b3;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  background: #f2f2f2;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+:root { 
+  --bg-color: #007bff; 
+  --second-bg-color: #1883f5; 
+  --text-color: white; 
+  --main-color: #020202; 
+} 
+
+
+.home-content { 
+  display: flex;   
+  align-items: center;   
+  justify-content: center;   
+  flex-direction: column;   
+  text-align: center; 
+  margin-top: 3rem; 
+} 
+span {   color: var(--main-color); 
+}
+
+.home-content h3 {   
+  margin-bottom: 2rem;   
+  margin-top: 1rem;   
+  font-size: 3.5rem; 
+} 
+.home-content h1 { 
+  font-size: 7rem;   
+  font-weight: 350;   
+  margin-top: 1rem; 
+  line-height: 1; 
+} 
+
+.text-animation {   
+  font-size: 17px;   
+  font-weight: 450;   
+  min-width: 150px; 
+} 
+ 
+.text-animation span { 
+  position: relative; 
+} 
+ 
+.text-animation span::before {  
+   content: "Web Developer"; 
+  color: var(--main-color);   
+  animation: words 20s infinite; 
+} 
+ 
+.text-animation span::after {   
+  content: "";   
+  background-color: var(--bg-color);    
+  position: absolute; 
+  width: 
+  calc(100% + 8px); 
+  height: 100%; 
+  border-left: 3px solid var(--bg-color); 
+  right: -8px; 
+  animation: cursor 0.6s infinite, typing 20s steps(14) infinite; 
+} 
+
+@keyframes cursor { 
+  to { 
+    border-left: 2px solid var(--main-color); 
+  } 
+} 
+ 
+@keyframes words { 
+  0%,   20% {     content: "Web Developer"; 
+  } 
+  21%,   40% {     content: "Grapich Designer"; 
+  } 
+  41%,   60% {     content: "UI / UX Designer"; 
+  } 
+  61%,   80% {     content: "Content Manager"; 
+} 
+81%, 
+100% { 
+    content: "Software Tester"; 
+  } 
+} 
+ 
+@keyframes typing { 
+10%, 
+15%, 
+30%, 
+35%, 
+50%, 
+55%, 
+70%, 
+75%, 
+90%,   
+95% 
+{     width: 0; 
+  } 
+5%, 
+20%, 
+25%, 
+40%, 
+45%, 
+60%, 
+65%, 
+80%, 
+85% { 
+    width: calc(100% + 8px); 
+  } 
+} 
+
+.social-icons a {   
+  display: inline-flex;   
+  justify-content: center;   
+  align-items: center;   
+  width: 1.5rem;   
+  height: 1.5rem; 
+  background: transparent; 
+  border: 0.2rem solid var(--main-color); 
+  font-size: 2.5rem; 
+  border-radius: 50%; 
+  color: var(--main-color);   
+  margin: 2rem 1.5rem 2rem 0; 
+  transition: 0.3s ease-in-out; 
+  } 
+   
+  .social-icons a:hover {   
+    color: white;   
+    transform: scale(1.3) 
+    translateY(-5px);   
+    box-shadow: 0 0 25px var(--main-color);   
+    background-color: var(--main-color); 
+  } 
+   
+  
